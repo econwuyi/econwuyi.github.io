@@ -7,18 +7,92 @@
   <meta name="description" content="Publications and working papers by Yi Wu in applied microeconomics and related fields." />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="style.css" />
+
+<style>
+.research-main .simple-page-header { padding: 41px 0 11px; }
+.research-main .simple-page-header h1 { margin: 0; font-size: clamp(2.3rem, 4.8vw, 3rem); }
+.research-main .section { padding-top: 29px; padding-bottom: 27px; }
+.research-main .block-title { margin-bottom: 22px; }
+.research-main .paper { padding: 23px 0 28px; }
+.research-main .paper:first-child { padding-top: 0; }
+.research-main .paper__venue em { font-style: italic; }
+.research-main .research-abstract { font-size: .95rem; line-height: 1.8; color: #495154; max-width: 830px; margin: 15px 0 0; }
+.research-main .research-abstract strong { color: #303538; font-weight: 700; }
+.research-main .paper__links { margin-top: 15px; }
+.research-main .paper-figures { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 860px; margin-top: 20px; }
+.research-main .paper-figure { margin: 0; }
+.research-main .paper-figure a { display: block; }
+.research-main .paper-figure a:hover { text-decoration: none; }
+.research-main .paper-figure img { display: block; width: 100%; height: auto; border: 1px solid var(--line); background: white; }
+.research-main .paper-figure figcaption { margin-top: 8px; color: #586062; font-size: .84rem; line-height: 1.55; }
+@media (max-width: 780px) {
+  .research-main .simple-page-header { padding-top: 32px; }
+  .research-main .section { padding-top: 24px; }
+  .research-main .paper-figures { gap: 16px; }
+}
+</style>
 </head>
 <body>
 <header class="site-head"><div class="wrapper topbar"><a class="wordmark" href="./">Yi Wu</a><nav aria-label="Main navigation"><a href="./">Home</a><a href="research.html" aria-current="page">Research</a><a href="cv.html">CV</a></nav></div></header>
-<main class="wrapper">
+<main class="wrapper research-main">
   <header class="page-header simple-page-header"><h1>Research</h1></header>
-  <section class="section" aria-labelledby="publications"><h2 class="block-title" id="publications">Publication</h2><div class="paper-list">
-    <article class="paper" id="decision-function"><h3 class="paper__title">A Decision-Function Framework for Auditing Artificial Decision-Makers: Evidence from an Immigration Conjoint Benchmark</h3><p class="paper__authors">Yi Wu and Ke Shang (equal contribution; co-first authors)</p><p class="paper__venue">Computers in Human Behavior: Artificial Humans (2026), Article 100411</p><div class="paper__links"><a href="https://doi.org/10.1016/j.chbah.2026.100411">Published paper</a><a href="https://doi.org/10.1016/j.chbah.2026.100411">DOI</a></div><details class="summary"><summary>Research summary</summary><p>This study audits the decision functions of large language models using an immigration conjoint benchmark and examines how their attribute weights compare with observed human judgments.</p></details></article>
-  </div></section>
-  <section class="section" aria-labelledby="working-papers"><h2 class="block-title" id="working-papers">Working Papers</h2><div class="paper-list">
-    <article class="paper" id="ai-hiring"><h3 class="paper__title">Generative AI and Early-Career Hiring: Counts, Entry Rates, and the Employment Base</h3><p class="paper__authors">Yi Wu (sole author)</p><p class="paper__venue">Research Square preprint, 2026</p><div class="paper__links"><a href="https://doi.org/10.21203/rs.3.rs-11342200/v1">Preprint / PDF</a><a href="https://doi.org/10.21203/rs.3.rs-11342200/v1">DOI</a></div><details class="summary"><summary>Research summary</summary><p>This study examines how industry exposure to generative AI relates to post-2023 changes in early-career hiring, distinguishing changes in entry rates from changes in the stable employment base.</p></details></article>
-    <article class="paper" id="marital-matching"><h3 class="paper__title">Compared with Whom? Age and Reference Markets in Marital Matching</h3><p class="paper__authors">Yi Wu (first and corresponding author), with Ke Shang</p><p class="paper__venue">Working paper</p><details class="summary"><summary>Research summary</summary><p>This project studies how age-specific comparison groups and relative earnings shape marital matching, using U.S. survey data to examine whose economic position serves as a reference point.</p></details></article>
-  </div></section>
+  <section class="section" aria-labelledby="publications">
+    <h2 class="block-title" id="publications">Publication</h2>
+    <div class="paper-list">
+      <article class="paper" id="decision-function">
+        <h3 class="paper__title">A Decision-Function Framework for Auditing Artificial Decision-Makers: Evidence from an Immigration Conjoint Benchmark</h3>
+        <p class="paper__authors">Yi Wu and Ke Shang (equal contribution; co-first authors)</p>
+        <p class="paper__venue"><em>Computers in Human Behavior: Artificial Humans</em> (2026), Article 100411</p>
+        <p class="research-abstract"><strong>Abstract.</strong> Large language models (LLMs) are increasingly used to stand in for survey respondents and other human decision-makers, but agreement in average responses can mask different ways of weighting case attributes. We propose a decision-function framework that compares human and model outputs at the level of conditional response patterns and calibrates subgroup comparisons against the recoverability of the human target. Using a U.S. immigration conjoint benchmark and matched GPT, Qwen, and Llama evaluations, we find that no-persona LLMs reproduce much of the overall human applicant-weighting pattern while placing greater weight on several features that map readily onto administrative categories. GPT persona prompts show less consistent subgroup correspondence: education, in-group preference, and party depart most consistently from recoverable human subgroup patterns, whereas ideology and income vary across roles and outcomes. Within GPT, prompt-defined role frames also shift persona-conditioned weights. Together, these results show that human–LLM correspondence depends on the comparison being made and, for subgroup claims, on how reliably the human target itself can be recovered.</p>
+        <div class="paper__links"><a href="https://doi.org/10.1016/j.chbah.2026.100411" target="_blank" rel="noopener noreferrer">Published article / DOI</a></div>
+        <div class="paper-figures" aria-label="Selected figures from the decision-function paper">
+          <figure class="paper-figure">
+            <a href="images/decision-framework-figure-2.png" target="_blank" rel="noopener noreferrer">
+              <img src="images/decision-framework-figure-2.png" alt="Figure showing mean absolute coefficients for broad policy dimensions in human responses and GPT no-persona responses." />
+            </a>
+            <figcaption>No-persona GPT broadly reproduces overall human applicant-weighting patterns, while placing greater weight on some administratively codable features.</figcaption>
+          </figure>
+          <figure class="paper-figure">
+            <a href="images/decision-framework-figure-5.png" target="_blank" rel="noopener noreferrer">
+              <img src="images/decision-framework-figure-5.png" alt="Figure showing subgroup correspondence correlations for GPT persona-conditioned weights across choice and scaled-rating outcomes." />
+            </a>
+            <figcaption>Subgroup correspondence is heterogeneous: persona-conditioned weights align more closely with recoverable human patterns for some dimensions than for others.</figcaption>
+          </figure>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="section" aria-labelledby="working-papers">
+    <h2 class="block-title" id="working-papers">Working Papers</h2>
+    <div class="paper-list">
+      <article class="paper" id="ai-hiring">
+        <h3 class="paper__title">Generative AI and Early-Career Hiring: Counts, Entry Rates, and the Employment Base</h3>
+        <p class="paper__authors">Yi Wu (sole author)</p>
+        <p class="paper__venue">Research Square preprint (2026)</p>
+        <p class="research-abstract"><strong>Abstract.</strong> Stable new hires of workers aged 22–34 fell relative to those of workers aged 35–54 after 2022 in U.S. industries with greater exposure to language-model AI. Using the Quarterly Workforce Indicators, I compare stable with all new hires and separate the stable-hire count into the published entry rate and its stable-employment denominator. With equal industry weights, the early-versus-established post-period coefficient per standard deviation of industry exposure is −0.0165 for stable hires, compared with −0.0081 for all hires; their difference is statistically significant. On a common positive sample, the stable-hire log coefficient of −0.01796 consists of a +0.00310 entry-rate component and a −0.02106 employment-base component. The employment-base differential was already trending downward before the pandemic, partly offset in the count by an opposing movement in the measured rate. A separate comparison with the extrapolated 2017–2019 trend finds a more negative count slope after 2023, although the rate contribution varies with industry weights and the chosen preperiod. The average post-2022 stable-hire count differential is therefore concentrated in the stable-employment denominator, whose exposure-related age gradient predates ChatGPT; a distinct decline in the QWI-defined entry rate is less firmly supported. Employment-weighted count and base estimates are less precise.</p>
+        <div class="paper__links"><a href="https://doi.org/10.21203/rs.3.rs-11342200/v1" target="_blank" rel="noopener noreferrer">Preprint / DOI</a></div>
+        <div class="paper-figures" aria-label="Selected figures from the AI and early-career hiring paper">
+          <figure class="paper-figure">
+            <a href="images/ai-hiring-figure-2.png" target="_blank" rel="noopener noreferrer">
+              <img src="images/ai-hiring-figure-2.png" alt="Figure showing event-study coefficients for stable new hires and all new hires by AI exposure after 2022." />
+            </a>
+            <figcaption>Post-2022 hiring differentials are more negative for stable new hires than for all new hires in industries with greater AI exposure.</figcaption>
+          </figure>
+          <figure class="paper-figure">
+            <a href="images/ai-hiring-figure-4.png" target="_blank" rel="noopener noreferrer">
+              <img src="images/ai-hiring-figure-4.png" alt="Figure showing post-period coefficients by age group for stable-hiring count, stable-entry rate, and stable-employment base." />
+            </a>
+            <figcaption>Across age groups, the stable-hire count differential is concentrated in the stable-employment base rather than in the measured entry rate.</figcaption>
+          </figure>
+        </div>
+      </article>
+      <article class="paper" id="marital-matching">
+        <h3 class="paper__title">Compared with Whom? Age and Reference Markets in Marital Matching</h3>
+        <p class="paper__authors">Yi Wu (first and corresponding author), with Ke Shang</p>
+        <p class="research-abstract"><strong>Abstract.</strong> Earnings ranks are not invariant to the age distribution used to construct them. We use same-age recent first-marriage couples, for whom own-age and spouse-age rankings coincide, to estimate a benchmark matching relationship and ask which reference-age rule preserves it most closely among age-disparate couples. Under the primary mean–MSE criterion, spouse-age ranking yields the lowest transport loss for older husbands, while own-age ranking does so for younger husbands and for wives. Among age-disparate couples with non-tied ranks under both mappings, 8.95 percent switch within-couple ordering, while conditional rank concordance is almost unchanged.</p>
+      </article>
+    </div>
+  </section>
 </main>
 <footer class="site-footer"><div class="wrapper footer-inner"><span>&copy; 2026 Yi Wu</span><span><a href="mailto:wuyi@utexas.edu">Email</a> &nbsp;·&nbsp; <a href="https://github.com/econwuyi">GitHub</a> &nbsp;·&nbsp; <a href="https://orcid.org/0009-0000-1555-0193">ORCID</a></span></div></footer>
 </body>
